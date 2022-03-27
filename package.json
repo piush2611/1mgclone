@@ -1,0 +1,27 @@
+{
+  "name": "1mg-clone",
+  "version": "1.0.0",
+  "description": "A Construct Week Project, Masai Unit 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tail":"vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthdeshmukh2/1Mg-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthdeshmukh2/1Mg-Clone/issues"
+  },
+  "homepage": "https://github.com/parthdeshmukh2/1Mg-Clone#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "vite": "^2.8.6"
+  }
+}
