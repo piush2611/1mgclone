@@ -1,7 +1,8 @@
 module.exports = {
- 
-  content: ["*",'./Pages/**/*.{html,js}', './Components/**/*.{html,js}',
-  ],
+  //purge:["./HTML/**/*.html"],
+  content: [
+    
+  './Pages/**/*.{html,js}'],
   theme: {
     extend: {},
   },
