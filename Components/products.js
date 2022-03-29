@@ -192,9 +192,9 @@ const appendData=(data, parent)=>{
    data.map((elem)=>{
        let div = document.createElement("div");
        div.setAttribute("class", "productBox");
-       div.addEventListener("click", ()=>{
-           productDetails(elem);
-       })
+    //    div.addEventListener("click", ()=>{
+    //        productDetails(elem);
+    //    })
 
        let div2 =  document.createElement("div");
        div2.setAttribute("class", "imageContainer");
@@ -256,6 +256,7 @@ const appendData=(data, parent)=>{
        addBtn.setAttribute("class", "addBtn");
        addBtn.addEventListener("click", ()=>{
            addToCart(elem);
+           console.log("addToCart", elem)
        })
        div2.append(image);
        div3.append(name);

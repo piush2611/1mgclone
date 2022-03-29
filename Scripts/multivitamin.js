@@ -143,5 +143,5 @@ let Cat2= document.getElementById("cat2").textContent=cat2;
 
 let heading= document.getElementById("heading").textContent=name;
 
-addToCart()
+
 
