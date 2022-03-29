@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .productBox{
+        @apply flex flex-col bg-white h-96 shadow-2xl
+    }
+    .imageContainer{
+        @apply w-10/12 h-52 flex justify-center items-center mx-auto 
+    }
+    .image{
+        @apply w-2/4 h-3/4 
+    }
+    .nameContainer{
+        @apply w-full h-14 
+    }
+    .productname{
+        @apply text-sm font-serif ml-3 overflow-ellipsis
+    }
+    .sizeContainer{
+        @apply mt-1 w-full h-5
+    }
+    .productsize{
+        @apply text-xs text-gray-500 ml-3
+    }
+    .ratingContainer{
+        @apply w-full h-8 flex flex-wrap items-center
+    }
+    .productRating{
+        @apply w-1/4 h-4/6 ml-3 bg-[rgb(26,171,42)] rounded-sm items-center
+    }
+    .Ratings{
+        @apply text-white text-center
+    }
+    .totalRating{
+        @apply text-xs mx-2 text-gray-500
+    }
+    .OfferContainer{
+        @apply w-full h-8 flex items-center
+    }
+    .strikedPrice{
+        @apply text-xs text-gray-500 line-through mx-3
+    }
+    .productOffer{
+        @apply text-xs text-[rgb(137,212,146)]
+    }
+    .productPrice{
+        @apply w-full h-8 flex flex-wrap justify-between items-center
+    }
+    .Price{
+        @apply mx-3 text-lg
+    }
+    .addBtn{
+        @apply mx-3 text-[rgb(255,111,97)] font-bold cursor-pointer
+    }
+
+    
+
+  
+}
