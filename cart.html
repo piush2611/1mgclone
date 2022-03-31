@@ -30,7 +30,7 @@
     </div>
     
     <div class="w-9/12 flex h-96 mx-auto mt-12 ">
-        <div id="left" class="w-7/12  bg-white"></div>
+        <div id="left" class="w-7/12 "></div>
         <div id ="right" class="w-5/12 ml-6 bg-white"></div>
 
     </div>
@@ -76,7 +76,7 @@
         strikePrice.textContent=elem.Strikedoff;
 
         let div4 = document.createElement("div");
-        div3.setAttribute("class", "cartEdit");
+        div4.setAttribute("class", "cartEdit");
 
         let div5 = document.createElement("div");
         div5.setAttribute("class", "cartRemove");
@@ -85,13 +85,15 @@
         })
 
         let symbol = document.createElement("p");
+        symbol.setAttribute("class", "removeSymbol")
         symbol.innerHTML=`<i class="fa-solid fa-trash-can"></i> Remove`
 
         let div6 = document.createElement("div");
-        div5.setAttribute("class", "cartAdd");
+        div6.setAttribute("class", "cartAdd");
 
         let addBtn = document.createElement("button");
         addBtn.setAttribute("class", "button1");
+        addBtn.textContent="+"
         addBtn.addEventListener("click", ()=>{
             addItem()
         })
@@ -102,20 +104,22 @@
         qty.textContent=1
 
         let removeBtn = document.createElement("button");
-        addBtn.setAttribute("class", "button1");
+        removeBtn.setAttribute("class", "button2");
+        removeBtn.textContent="-"
+
         removeBtn.addEventListener("click", ()=>{
             substractItem()
         })
 
 
+        
         div2.append(name, price);
-        div3.append(size, strikePrice)
+        div3.append(size, strikePrice);
         div5.append(symbol);
-        div.append(div2, div3);
-        container.append(div );
-
-
-
+        div6.append(removeBtn, qty, addBtn ),
+        div4.append(div5, div6)
+       div.append(div2, div3, div4)
+       container.append(div);
 
 
        })
