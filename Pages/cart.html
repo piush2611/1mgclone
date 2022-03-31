@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='https://www.1mg.com/faviconRebrand.ico'> 
+    <title>Cart | 1mg</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://kit.fontawesome.com/9f2fe9ec92.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="w-full h-12 bg-white flex flex-wrap justify-between items-center">
+        <div class="flex w-7/12 items-center">
+            <img class="mx-6 h-9" src ="https://www.1mg.com/images/tata_1mg_logo.svg">
+            <div class="bg-gray-100 w-11/12 flex items-center" >
+                <div class="w-10/12">
+                    <input class="w-11/12 bg-gray-100 p-1 mx-2 h-3/4" type="text" placeholder="Search for Medicine And Health Products">
+                </div>
+               <div class="flex items-center ml-24">
+             
+                <i class="fa-solid fa-magnifying-glass absolute text-gray-500 fa-sm"></i>
+              
+               </div>
+              
+            </div>
+            
+        </div>
+        <div><p class="mx-4 cursor-pointer text-sm">Need help?</p></div>
+    </div>
+    
+    <div class="w-9/12 flex h-96 mx-auto mt-12 ">
+        <div id="left" class="w-7/12  bg-white"></div>
+        <div id ="right" class="w-5/12 ml-6 bg-white"></div>
+
+    </div>
+
+    
+    
+</body>
+</html>
+<script>
+   let cartArr = JSON.parse(localStorage.getItem("cartItem"))||[];
+   console.log(cartArr);
+   
+
+   const appendData=(cartArr)=>{
+       let container = document.getElementById("left");
+       container.innerHTML="";
+
+       cartArr.map((elem)=>{
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "CartItem");
+
+        let div2 = document.createElement("div");
+        div2.setAttribute("class", "cartName");
+
+        let name = document.createElement("p");
+        name.setAttribute("class", "cartTitle")
+        name.textContent=elem.Title;
+
+        let price = document.createElement("p");
+        price.setAttribute("class", "cartPrice");
+        price.textContent=`₹${elem.MRP}`;
+
+        let div3 = document.createElement("div");
+        div3.setAttribute("class", "cartSize");
+
+        let size = document.createElement("p");
+        size.setAttribute("class", "cartProductSize")
+        size.textContent=elem.size;
+
+        let strikePrice = document.createElement("p");
+        strikePrice.setAttribute("class", "cartStriked");
+        strikePrice.textContent="";
+
+        let div4 = document.createElement("div");
+        div3.setAttribute("class", "cartEdit");
+
+        let div5 = document.createElement("div");
+        div5.setAttribute("class", "cartRemove");
+        div5.addEventListener("click", ()=>{
+            removeItem(elem);
+        })
+
+        let symbol = document.createElement("p");
+        symbol.innerHTML=`<i class="fa-solid fa-trash-can"></i> Remove`
+
+        let div6 = document.createElement("div");
+        div5.setAttribute("class", "cartAdd");
+
+        let addBtn = document.createElement("button");
+        addBtn.setAttribute("class", "button1");
+        addBtn.addEventListener("click", ()=>{
+            addItem()
+        })
+
+        let qty = document.createElement("p");
+        qty.id = "Quantity";
+        qty.setAttribute("class", "cartQty");
+        qty.textContent=1
+
+        let removeBtn = document.createElement("button");
+        addBtn.setAttribute("class", "button1");
+        removeBtn.addEventListener("click", ()=>{
+            substractItem()
+        })
+
+
+        div2.append(name, price);
+        div3.append(size)
+        div5.append(symbol);
+        div.append(div2, div3);
+        container.append(div );
+
+
+
+
+
+       })
+   }
+   appendData(cartArr);
+
+   const removeItem=(elem)=>{
+
+   }
+</script>

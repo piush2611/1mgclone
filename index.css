@@ -54,6 +54,22 @@
     .addBtn{
         @apply mx-3 text-[rgb(255,111,97)] font-bold cursor-pointer
     }
+    .CartItem{
+        @apply flex h-36 border-2 flex-col
+    }
+    .cartName{
+        @apply flex w-full h-14 mt-4 justify-between
+    }
+    .cartTitle{
+        @apply w-10/12 ml-4 font-semibold text-sm
+    }
+    .cartPrice{
+        @apply font-semibold text-sm mr-4
+    }
+    .cartSize{
+        @apply w-full h-36 border-4
+    }
+    
 
     
 
