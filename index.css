@@ -67,9 +67,14 @@
         @apply font-semibold text-sm mr-4
     }
     .cartSize{
-        @apply w-full h-36 border-4
+        @apply flex w-full border-2 mt-4 justify-between
     }
-    
+  
+    .cartProductSize{
+        @apply text-xs text-gray-400 font-semibold mx-4
+    }
+   
+     
 
     
 

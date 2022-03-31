@@ -73,7 +73,7 @@
 
         let strikePrice = document.createElement("p");
         strikePrice.setAttribute("class", "cartStriked");
-        strikePrice.textContent="";
+        strikePrice.textContent=elem.Strikedoff;
 
         let div4 = document.createElement("div");
         div3.setAttribute("class", "cartEdit");
@@ -109,7 +109,7 @@
 
 
         div2.append(name, price);
-        div3.append(size)
+        div3.append(size, strikePrice)
         div5.append(symbol);
         div.append(div2, div3);
         container.append(div );
