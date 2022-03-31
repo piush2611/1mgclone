@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1a0e1cf198.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+
+
+    
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+    }
+
+    nav {
+        /* background-color: black; */
+        /* position: fixed; */
+        width: 100%;
+        z-index: 999;
+        /* height: 65px; */
+        /* line-height: 65px; */
+
+
+    }
+
+    nav .containershr {
+        position: relative;
+        /* max-width: 1250px; */
+        padding: 0 30 px;
+        height: 50px;
+        /* line-height: 50px; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+        /* flex-wrap: wrap; */
+    }
+
+    .containershr .nav-link {
+        display: inline-flex;
+    }
+
+    .nav-link li {
+        list-style: none;
+        /* color:white; */
+
+    }
+
+    .nav-link #heading>a {
+        color: black;
+    }
+
+    .nav-link li a {
+        text-decoration: none;
+        /* color: black; */
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 15px;
+        color: black;
+
+    }
+    .nav-link :hover{
+        color: #ff6f61
+    }
+    #heading>a:hover{
+        color:#ff6f61
+    }
+   
+
+    .megabox {
+        position: absolute;
+        /* top: 100px; */
+        width: auto;
+        /* width: 180px; */
+        /* line-height: 45px; */
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+
+    }
+
+    .megabox .content {
+        
+        
+        
+        padding: 25px 20px;
+        display: flex;
+        
+    }
+
+   
+  
+
+   
+
+    .content.row.megalink {
+        border-left: 1px solid rgb(255, 255, 255, 0.09);
+        margin-left: -40px;
+
+    }
+
+    .row.megalink li {
+        padding: 0 20px;
+        color: black;
+       
+
+
+    }
+
+    .row.megalink li a {
+        padding: 0 20px;
+        color: black;
+        font-size: 17px;
+        display: block;
+        /* border: 2px solid red; */
+
+
+    }
+
+    .nav-link li:hover .megabox {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease;
+        /* top: 65px; */
+    }
+
+    #sh{
+        
+        /* border: 2px solid red; */
+        font-weight: bolder;
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="containershr">
+            <ul class="nav-link">
+                <li id="heading"><a href="#">Health Resource Center</a><i class="fa fa-angle-down drop-icon"></i>
+                    <div class="megabox">
+                        <div class="content">
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">All Diseases</a></li>
+                                    <li><a href="#">All Medicines</a></li>
+                                    <li><a href="#">Medicines by Therapeutic Class</a></li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </li>
+
+                <li id="heading"><a href="#">Covid Essentials</a><i class="fa fa-angle-down drop-icon"></i>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Covid-19 Self test kits</a></li>
+                                    <li><a href="#">Oxygen Cans & Concentrators</a></li>
+                                    <li><a href="#">Masks</a></li>
+                                    <li><a href="#">Sanitizers & Handwash Products</a></li>
+                                    <li><a href="#">Support Your Immunity</a></li>
+                                    <li><a href="#">Thermometer</a></li>
+                                    <li><a href="#">Chyawanprash</a></li>
+                                </ul>
+                            </div>
+                                
+                        
+                    </div>
+                   </div>
+                   
+                
+                </li>
+
+                <li id="heading"><a href="#">Featured</a><i class="fa fa-angle-down drop-icon"></i>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Tata 1mg Health Products</a></li>
+                                    <li><a href="#">What others are buying</a></li>
+                                    <li><a href="#">New Arrivals on Tata 1MG</a></li>
+                                    <li><a href="#">Buy More, Save More</a></li>
+                                    <li><a href="#">Minimum 33% Off</a></li>
+                                    <li><a href="#">Combos</a></li>
+                                    
+                                </ul>
+                            </div>
+                               
+                        
+                            <div class="row">
+                            <ul class="mega-links">
+                                <li><a href="#">Deals of the Day</a></li>
+                                <li><a href="#">Top Brands</a></li>
+                                <li><a href="#">Accu-Chek</a></li>
+                                <li><a href="#">Ensure</a></li>
+                                <li><a href="#">Revital</a></li>
+                                <li><a href="#">Optimum Nutrition (ON)</a></li>
+                                <li><a href="#">Dr. Morepen</a></li>
+                                <li><a href="#">Pediasure</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                       </div>
+                
+                </li>
+                <li id="heading"><a href="#">Vitamins & Nutrition</a><i class="fa fa-angle-down drop-icon"></i>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Tata 1mg Health Products</a></li>
+                                    <li><a href="#">What others are buying</a></li>
+                                    <li><a href="#">New Arrivals on Tata 1MG</a></li>
+                                    <li><a href="#">Buy More, Save More</a></li>
+                                    <li><a href="#">Minimum 33% Off</a></li>
+                                    <li><a href="#">Combos</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Vitamins & Supplements</a></li>
+                                    <li><a href="#">Multivitamins</a></li>
+                                    <li><a href="#">Vitamins A-Z</a></li>
+                                    <li><a href="#">Mineral Supplements</a></li>
+                                    <li><a href="#">Vitamin B12 & B Complex</a></li>
+                                    <li><a href="#">Nutritional Drinks</a></li>
+                                    <li><a href="#">Adult Daily Nutrition</a></li>
+                                    <li><a href="#">Kids Nutrition (2-15 Yrs)</a></li>
+                                    <li><a href="#">For Women</a></li>
+                                    <li><a href="#">Health Food & Drinks</a></li>
+                                    <li><a href="#">Green Tea & Herbal Tea</a></li>
+                                    <li><a href="#">Apple Cider Vinegar</a></li>
+                                    <li><a href="#">Healthy Snacks</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Protein Supplements</a></li>
+                                    <li><a href="#">Whey Protein</a></li>
+                                    <li><a href="#">Amino Acids</a></li>
+                                    <li><a href="#">Mass Gainers</a></li>
+                                    <li><a href="#">Workout Essential</a></li>
+                                    <li><a href="#">Fat Burners</a></li>
+                                    <li><a href="#">Omega & Fish Oil</a></li>
+                                    <li><a href="#">Fish Oil</a></li>
+                                    <li><a href="#">Cod Liver Oil</a></li>
+                                    <li><a href="#">Flax Seed Oil</a></li>
+                                    <li><a href="#">Immunity Boosters</a></li>
+                                    <li><a href="#">Chyawanprasha</a></li>
+                                    <li><a href="#">Vitamin C</a></li>
+                                    <li><a href="#">Herbal Teas</a></li>
+                                    <li><a href="#">Antioxidant Supplements</a></li>
+                                    <li><a href="#">Ayurvedic Supplements</a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Specialty Supplements</a></li>
+                                <li><a href="#">Green Supplements</a></li>
+                                <li><a href="#">Beauty Supplements</a></li>
+                                <li><a href="#">Pre and Probiotics</a></li>
+                                <li><a href="#">Glucosamine</a></li>
+                                <li><a href="#">Collagen</a></li>
+                                <li><a href="#">Antioxidants</a></li>
+                                <li><a href="#">Biotin</a></li>
+                                <li><a href="#">Weight Management</a></li>
+                                <li><a href="#">Weight Management Herbs</a></li>
+                                <li><a href="#">Meal Replacements</a></li>
+                                <li><a href="#">Weight Gain</a></li>
+                                
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>   
+                </li> 
+
+                            <li id="heading"><a href="#">Diabetes</a><i class="fa fa-angle-down drop-icon"></i>
+                                <div class="megabox">
+                                    <div class="content">
+            
+                                        <div class="row">
+                                            <ul class="mega-links">
+                                                <!-- Devices -->
+                                                <li><a href="#">Blood Glucose Monitors</a></li>
+                                                <li><a href="#">Test Strips & Lancets</a></li>
+                                                <li><a href="#">Syringes & Pens</a></li>
+                                                
+                                               
+                                                
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <!-- Diabetic Medicines -->
+                                                <li><a href="#">Vitamins, Minerals & Antioxidants</a></li>
+                                                <li><a href="#">Homeopathy Medicines</a></li>
+                                                <li><a href="#">Ayurvedic Medicines</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="row">
+                                            <ul class="mega-links">
+                                                <!-- Sugar Substitutes -->
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <!-- Diabetic Diet -->
+                                                <li><a href="">Juices & Vinegars</a></li>
+                                                <li><a href="">Superfoods</a></li>
+                                            </ul>
+                                            <ul class="mega-links">
+                                                <!-- Diabetic Foot Health -->
+                                            </ul>
+                                        </div>
+
+
+                                    </div> 
+                                </div> 
+                            </li>  
+
+                                <li id="heading"><a href="#">Healthcare Devices</a><i class="fa fa-angle-down drop-icon"></i>
+                                    <div class="megabox">
+                                        <div class="content">
+                                            <div class="row">
+                                                <ul class="mega-links">
+                                                    <!-- Top brands in Healthcare Devices -->
+                                                    <li><a href="#">Omron</a></li>
+                                                    <li><a href="#">Accu-chek</a></li>
+                                                    <li><a href="#">Dr. Morepen Devices</a></li>
+                                                    <li><a href="#">Dr Trust</a></li>
+                                                    <li><a href="#">OneTouch</a></li>
+                                                    <li><a href="#">Contour</a></li>
+                                                </ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">Masks (N95, Surgical and more)</a></li>
+                                                    
+                                                    <li><a href="#">Face Shield</a></li>
+                                                    <li><a href="#">Surgical Masks</a></li>
+                                                    <li><a href="#">N95 Masks</a></li>
+                                                </ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">Oxygen Concentrators & Cans</a></li>
+                                                   
+                                                </ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">BP Monitors</a></li>
+                                                    
+
+                                                </ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">Nebulizers & Vaporizers </a></li>
+                                                   
+
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#"> Oximeters & Pedometers </a></li>
+                                                   </ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#"> Vital Signs Monitors & Wearables</a></li></ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#"> Weighing Scales</a></li></ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">Thermometers</a></li>
+                                                    
+                                                <li><a href="">IR Thermometers</a></li></ul>
+                                                <ul class="mega-links">
+                                                    <li id="sh"><a href="#">Body Massager</a></li></ul>
+                                                <ul class="mega-links"> <li id="sh"><a href="#">Diabetes Monitors</a></li></ul>
+                                                <ul class="mega-links"><li id="sh"><a href="#">Mobility Equipments</a></li></ul> 
+                                                 <ul class="mega-links"><li id=

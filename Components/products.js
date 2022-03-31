@@ -22,62 +22,62 @@ const elements = ()=>{
         <div class="block shadow-xl bg-white w-full p-3 mt-0.5 h-80 overflow-y-scroll ">
             <h3 class="font-bold ">BRANDS</h3>
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Tata 1mg">
+                <input  class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Tata 1mg" id="Tata1Mg" value="Tata 1mg">
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Tata 1mg">Tata 1mg</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="HealthCart">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="HealthCart" id="HealthCart" value="HealthCart">
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="HealthCart">HealthCart</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Revital">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Revital" id="Revital" value="Revital">
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Revital">Revital</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Healthvit">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Healthvit" id="Healthvit" value="Healthvit">
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="THealthvit">Healthvit</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Pure Nutrition">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Pure Nutrition" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Pure Nutrition">Pure Nutrition</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="WellsPro">
+                <input class="checkBox my-2 align-middle  cursor-pointer" type="checkbox" name="WellsPro" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="WellsPro">WellsPro</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Carbamide Fort">
+                <input class="checkBox my-2 align-middle  cursor-pointer" type="checkbox" name="Carbamide Fort" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Carbamide Fort">Carbamide Fort</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Saral Proticons">
+                <input class="checkBox my-2 align-middle  cursor-pointer" type="checkbox" name="Saral Proticons" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Saral Proticons">Saral Proticons</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="GNC">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="GNC" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="GNC">GNC</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Swisse">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Swisse" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Swisse">Swisse</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle cursor-pointer" type="checkbox" name="Proathlix">
+                <input class="checkbox my-2 align-middle cursor-pointer" type="checkbox" name="Proathlix" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Proathlix">Proathlix</label>
             </div>
 
             <div class="flex items-center">
-                <input class="my-2 align-middle  cursor-pointer" type="checkbox" name="Curae Health">
+                <input class="checkbox my-2 align-middle  cursor-pointer" type="checkbox" name="Curae Health" >
                 <label class="align-middle mx-2 text-xs text-gray-500  cursor-pointer" for="Curae Health">Curae Health</label>
             </div>
         </div>
@@ -155,12 +155,12 @@ const elements = ()=>{
          </div>
          <div class=" w-full flex flex-row-reverse mt-3 items-center">
             
-             <select class="w-2/12 p-1 ">
+             <select id="selected"  class="w-2/12 p-1 ">
                  <option class="text-gray-500 cursor-pointer " value="">Relevance</option>
-                 <option class="text-gray-500 cursor-pointer " value="">High Ratings</option>
-                 <option class="text-gray-500 cursor-pointer " value="">Low Ratings</option>
-                 <option class="text-gray-500 cursor-pointer " value="">Price High To Low</option>
-                 <option class="text-gray-500 cursor-pointer " value="">Price Low To High</option>
+                 <option class="text-gray-500 cursor-pointer " value="HighRating">High Ratings</option>
+                 <option class="text-gray-500 cursor-pointer " value="LowRating">Low Ratings</option>
+                 <option class="text-gray-500 cursor-pointer " value="HighPrice">Price High To Low</option>
+                 <option class="text-gray-500 cursor-pointer " value="LowPrice">Price Low To High</option>
              </select>
              <p class="mx-5">Sort By</p>
          </div>
@@ -175,7 +175,7 @@ const getData=async (url)=>{
     try {
         let medicine = await fetch(url);
         let data = await medicine.json();
-        console.log(data);
+        // console.log(data);
         return data;
         // appendData(data);
         
@@ -185,9 +185,13 @@ const getData=async (url)=>{
     }
 }
 
+
+
+
 const appendData=(data, parent)=>{
+    // console.log(data, "sortData");
  
-//    parent.innerHTML="";
+   parent.innerHTML="";
 
    data.map((elem)=>{
        let div = document.createElement("div");
@@ -273,15 +277,46 @@ const appendData=(data, parent)=>{
    })
 }
 
+
 const addToCart=(data)=>{
     cartArr.push(data);
-    console.log(cartArr)
+    // console.log(cartArr)
     localStorage.setItem("cartItem", JSON.stringify(cartArr));
 
 }
+
+
+const sortData= (response, value) =>{
+    console.log(response);
+    // let selected = document.getElementById("selected").value
+     if (value == "HighPrice"){
+
+      response.sort(function(a, b){
+        return Number(b.MRP)-Number(a.MRP)
+      });
+     }
+     if (value == "LowPrice"){
+
+        response.sort(function(a, b){
+        return Number(a.MRP)-Number(b.MRP)
+        });
+
+      }
+      console.log(response);
+     return response;
+     
+} 
+
+// const filterData=()=>{
+//     let checkBoxes = document.querySelectorAll(".checkBox");
+
+// }
+
+
+
 
 // const productDetails=(data)=>{
 
 // }
 
-export {elements, getData, appendData, addToCart}
+export {elements, getData, appendData, sortData}
