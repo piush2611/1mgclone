@@ -1,4 +1,5 @@
 let cartArr = JSON.parse(localStorage.getItem("cartItem"))||[];
+let productArr= JSON.parse(localStorage.getItem("product"))||[];
 
 const elements = ()=>{
 
@@ -196,9 +197,9 @@ const appendData=(data, parent)=>{
    data.map((elem)=>{
        let div = document.createElement("div");
        div.setAttribute("class", "productBox");
-    //    div.addEventListener("click", ()=>{
-    //        productDetails(elem);
-    //    })
+       div.addEventListener("click", ()=>{
+           productDetails(elem);
+       })
 
        let div2 =  document.createElement("div");
        div2.setAttribute("class", "imageContainer");
@@ -307,5 +308,11 @@ const sortData= (response, value) =>{
      
 } 
 
+const productDetails =(elem)=>
+{
+    productArr.push(elem);
+    localStorage.setItem("product", JSON.stringify(productArr));
+
+}
 
 export {elements, getData, appendData, sortData}
