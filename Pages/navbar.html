@@ -15,10 +15,10 @@
     }
    
 </style>
-<body>
+<body id="body">
     <nav>
          <!-- ----------------1st block start------------------ -->
-       <div class="bg-white w-full  border-2 mx-auto flex flex-wrap items-center justify-between">
+       <div  class=" bg-white w-full  border-2 mx-auto flex flex-wrap items-center justify-between">
            <div class=" h-full flex items-center ml-4 ">
                <img class=" cursor-pointer" src ="https://www.1mg.com/images/tata_1mg_logo.svg">
                <h1 class="ml-10 font-bold text-lg text-[rgb(255,111,97)] cursor-pointer" >MEDICINES</h1>
@@ -37,7 +37,7 @@
            
            
            <div class="flex flex-wrap justify-around mr-10">
-               <h1 id = "login" class="text-sm font- mx-5 cursor-pointer">Login | SignUp</h1>
+               <h1 id = "login" class="text-sm font- mx-5 cursor-pointer"><a href="login.html">Login | SignUp</a></h1>
                <h1 class="text-sm  mx-5 cursor-pointer">Offers</h1>
              <div class="mx-5 flex">
                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -77,3 +77,19 @@
     
 </body>
 </html>
+<script>
+    // document.getElementById("login").addEventListener("click", ()=>{
+    //     userLogin();
+    // })
+
+    // const userLogin=()=>{
+    //   let div =  document.createElement("div");
+    //   div.setAttribute("class", "loginBox")
+
+    //   document.getElementById("body").append(div);
+
+    // //   let blur = document.getElementById("blur");
+    // //   blur.classList.toggle("active");
+
+    // }
+</script>

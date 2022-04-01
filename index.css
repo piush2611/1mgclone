@@ -126,6 +126,11 @@
     .points2{
         @apply mx-6 font-semibold text-lg mt-4
     }
+    .loginBox{
+        @apply bg-gray-100 flex w-8/12 h-96 mx-auto mt-8
+    }
+   
+    
   
 
 
