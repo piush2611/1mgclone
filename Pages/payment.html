@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,17 +34,15 @@
     </div>
 
     <div class="w-5/12 block drop-shadow-lg mx-auto mt-28 bg-white h-72 rounded-xl">
-        <input class="m-3 w-10/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter Card Number">
-        <input class="m-3 w-3/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter">
-        <input class="m-3 w-4/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter">
-        <input class="m-3 w-10/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter">
-        <button class="flex my-4 mx-auto bg-[rgb(255,111,97)] text-white rounded-lg w-3/12 p-2 justify-center ">Make Payment</button>
+        <input id="num" class="m-3 w-10/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter Card Number">
+        <input id="cvv" class="m-3 w-3/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter CVV">
+        <input id="expiry" class="m-3 w-4/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Expiry">
+        <input id="name" class="m-3 w-10/12 h-11 p-3 border mx-auto ml-3" type="text" placeholder="Enter Name">
+        <button onclick="goTo()" class="flex my-4 mx-auto bg-[rgb(255,111,97)] text-white rounded-lg w-3/12 p-2 justify-center ">Make Payment</button>
 
     </div>
-
-
- 
-  
-    
 </body>
 </html>
+<script src = "/Scripts/payment.js"> 
+    
+</script>

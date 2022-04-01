@@ -193,5 +193,5 @@ document.getElementById("cartGo").addEventListener("click", ()=>{
     goToCart();
 })
 const goToCart=()=>{
-    window.location.href="cart.html";
+    window.location.href="/Pages/cart.html";
 }
