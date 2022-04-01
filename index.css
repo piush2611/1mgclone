@@ -79,7 +79,7 @@
         @apply flex justify-between mt-4 items-center
     }
     .cartRemove{
-        @apply w-1/3 cursor-pointer
+        @apply w-1/3 cursor-pointer text-gray-500
     }
     .removeSymbol{
       @apply  mx-4 cursor-pointer
@@ -141,6 +141,34 @@
     .boxName{
         @apply w-11/12 text-sm hover:font-semibold
     }
+    .firstDiv{
+        @apply border-b-2 w-full h-20 flex items-center
+    }
+    .apply{
+        @apply w-8/12 bg-gray-200 h-12 ml-4 rounded-lg text-lg p-2
+    }
+    .btnApply{
+        @apply w-3/12 bg-[rgb(255,111,97)] text-white font-semibold h-11 rounded-lg mx-1 text-lg
+    }
+    .secondDiv{
+        @apply w-11/12 mx-auto border-b-2 flex justify-between h-12 items-center
+    }
+    .totalMrp{
+        @apply text-sm text-gray-500 mx-4
+    }
+    .paid{
+        @apply text-lg text-gray-500 mx-4 font-semibold
+    }
+    .saveMrp{
+        @apply text-lg font-bold text-[rgb(104,181,64)] mx-4
+    }
+    .thirdDiv{
+        @apply w-11/12 mx-auto border-b-2 flex justify-between h-12 items-center bg-[rgb(228,246,231)]
+    }
+    .checkout{
+        @apply w-full text-center h-12 bg-[rgb(255,111,97)] mt-3 rounded-lg text-white text-lg font-bold
+    }
+
    
     
   
