@@ -9,13 +9,13 @@ const elements = ()=>{
             <h3 class="font-bold">CATEGORIES</h3>
             <p class="text-xs mt-4">NUTRITION</p>
             <ul class="mt-3 flex flex-col">
-                <li><a class="text-xs mx-4 text-[rgb(255,111,97)] font-semibold" href="">Multivitamins</a></li>
-                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)]" href="">Chyawanprash</a></li>
+                <li><a class="text-xs mx-4 text-gray-500 font-semibold" href="multivitamin.html">Multivitamins</a></li>
+                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)]" href="Chyawanprash.html">Chyawanprash</a></li>
             </ul>
             <p class="text-xs mt-4">DIABETES MEDICINES</p>
             <ul class="mt-3 flex flex-col">
-                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)] " href="">Ayurvedic</a></li>
-                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)]" href="">Homeopathy</a></li>
+                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)] " href="Ayurvedic.html">Ayurvedic</a></li>
+                <li><a class="text-xs mx-4 text-gray-500 hover:text-[rgb(255,111,97)]" href="Homeopathy.html">Homeopathy</a></li>
             </ul>
 
             <h3 class="font-bold mt-4">FILTERS</h3>
@@ -281,6 +281,7 @@ const appendData=(data, parent)=>{
 
 const addToCart=(data)=>{
     cartArr.push(data);
+    location.reload() 
     // console.log(cartArr)
     localStorage.setItem("cartItem", JSON.stringify(cartArr));
 
@@ -303,6 +304,23 @@ const sortData= (response, value) =>{
         });
 
       }
+
+      if (value == "HighRating"){
+
+        response.sort(function(a, b){
+          return Number(b.Ratings)-Number(a.Ratings)
+        });
+       }
+       if (value == "LowRating"){
+  
+          response.sort(function(a, b){
+          return Number(a.Ratings)-Number(b.Ratings)
+          });
+  
+        }
+  
+
+
       console.log(response);
      return response;
      

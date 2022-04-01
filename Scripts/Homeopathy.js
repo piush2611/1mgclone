@@ -13,9 +13,9 @@ let productArr = JSON.parse(localStorage.getItem("product"));
 
 //  ----------------------import header and footer end-----------------
 
-let name = "Multivitamins";
-let cat1 = "Vitamins & Nutrition >";
-let cat2 = "Vitamins & Supplements >"
+let name = "Homeopathy Medicines";
+let cat1 = "Diabetes >";
+let cat2 = "Diabetic Medicines >"
 
 let cartArr = JSON.parse(localStorage.getItem("cartItem"))||[];
 
@@ -26,7 +26,7 @@ let head = document.getElementById("container2");
 
  let parent = document.getElementById("productContainer");
 
- let response = await getData(`http://localhost:3000/multiVitamins`);
+ let response = await getData(`  http://localhost:3000/Homeopathy_Medicine`);
 //  console.log(response);
  appendData(response, parent);
 
@@ -182,6 +182,7 @@ const appendData2=(data)=>{
 
 
 // -------------------------------Debouncing end-----------------------------------------
+
 
 document.getElementById("cartGo").addEventListener("click", ()=>{
     goToCart();

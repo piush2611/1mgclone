@@ -129,6 +129,18 @@
     .loginBox{
         @apply bg-gray-100 flex w-8/12 h-96 mx-auto mt-8
     }
+    .mainImage{
+        @apply w-full h-full
+    }
+    .showBox{
+        @apply w-2/5 h-60 bg-white z-50 absolute mx-52 -mt-12 rounded-xl overflow-scroll overflow-x-hidden 
+    }
+    .boxBox{
+        @apply w-full h-12 bg-white hover:bg-[rgb(255,111,97)] flex items-center p-3 mt-2 mb-2 cursor-pointer
+    }
+    .boxName{
+        @apply w-11/12 text-sm hover:font-semibold
+    }
    
     
   
