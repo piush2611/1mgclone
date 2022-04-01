@@ -100,7 +100,7 @@
        @apply w-11/12 mx-auto h-full
    }
    .detailName{
-       @apply font-bold text-sm w-11/12 mx-4
+       @apply font-semibold text-lg w-11/12 mx-4
    }
    .detailBrand{
        @apply text-[rgb(255,111,97)] mx-4 mt-3 text-xs
