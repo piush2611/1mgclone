@@ -307,16 +307,5 @@ const sortData= (response, value) =>{
      
 } 
 
-// const filterData=()=>{
-//     let checkBoxes = document.querySelectorAll(".checkBox");
-
-// }
-
-
-
-
-// const productDetails=(data)=>{
-
-// }
 
 export {elements, getData, appendData, sortData}
