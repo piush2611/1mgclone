@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "vite",
-    "build":"vite build"
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -61,6 +61,7 @@
     "glob-parent": "^6.0.2",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
+    "heroku": "^7.60.2",
     "import-fresh": "^3.3.0",
     "is-arrayish": "^0.2.1",
     "is-binary-path": "^2.1.0",
