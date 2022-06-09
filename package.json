@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "data": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -71,6 +72,7 @@
     "is-number": "^7.0.0",
     "js-tokens": "^4.0.0",
     "json-parse-even-better-errors": "^2.3.1",
+    "json-server": "^0.17.0",
     "lilconfig": "^2.0.5",
     "lines-and-columns": "^1.2.4",
     "merge2": "^1.4.1",
