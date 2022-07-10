@@ -26,7 +26,7 @@ let head = document.getElementById("container2");
 
  let parent = document.getElementById("productContainer");
 
- let response = await getData(`http://localhost:3000/Chyawanprash`);
+ let response = await getData(`https://fake-data-ii.herokuapp.com/Chyawanprash`);
 //  console.log(response);
  appendData(response, parent);
 

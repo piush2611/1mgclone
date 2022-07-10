@@ -26,7 +26,7 @@ let head = document.getElementById("container2");
 
  let parent = document.getElementById("productContainer");
 
- let response = await getData(`http://localhost:3000/Ayurvedic_Medicine`);
+ let response = await getData(`https://fake-data-ii.herokuapp.com/Ayurvedic_Medicine`);
 //  console.log(response);
  appendData(response, parent);
 
